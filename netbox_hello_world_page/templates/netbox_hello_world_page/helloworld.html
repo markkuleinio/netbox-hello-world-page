@@ -12,19 +12,12 @@ for multiline comments
 
 
 {% block title %}
-{# This is the text that is in the browser's title #}
-Hello World page
+{% comment %}
+This is the text that is shown in the browser's title and also
+in the header text (unless 'header' block is defined separately)
+{% endcomment %}
+Hello, World!
 {% endblock title %}
-
-
-{% block header %}
-{# No idea what these all do, but they give the familiar look and feel in NetBox 3.7 #}
-<div class="title-container px-3 pb-3">
-    <div id="content-title">
-        <h1 class="h2 w-100">Hello, World!</h1>
-    </div>
-</div>
-{% endblock header %}
 
 
 {% block content %}
